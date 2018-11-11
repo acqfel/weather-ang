@@ -4,9 +4,14 @@
 
 export const environment = {
   production: false,
-  appId: "DemoAppId01082013GAL",
-  appCode: "AJKnXv84fjrb0KIHawS0Tg"
+  appId: "8MKJp8O1YmU6h2c0pBir",
+  appCode: "IlOWuAPA9T3MAHPFKuQTFg"
 };
+
+/*
+appId: "DemoAppId01082013GAL",
+appCode: "AJKnXv84fjrb0KIHawS0Tg"
+*/
 
 /*
  * For easier debugging in development mode, you can import the following file

@@ -1,5 +1,5 @@
 export const environment = {
   production: true,
-  appId: "DemoAppId01082013GAL",
-  appCode: "AJKnXv84fjrb0KIHawS0Tg"
+  appId: "8MKJp8O1YmU6h2c0pBir",
+  appCode: "IlOWuAPA9T3MAHPFKuQTFg"
 };
