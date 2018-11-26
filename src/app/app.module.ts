@@ -3,10 +3,14 @@ import { NgModule } from '@angular/core';
 import { HttpClientModule, HttpClientJsonpModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
+import { FahrenheitPipe } from './fahrenheit.pipe';
+import { MomentPipe } from './moment.pipe';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    FahrenheitPipe,
+    MomentPipe
   ],
   imports: [
     BrowserModule,

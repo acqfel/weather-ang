@@ -13,6 +13,7 @@ export class AppComponent implements OnInit{
   private appCode: string;
 
   public weather: any;
+  public location: any;
   
   public baseUrl: string;
 
@@ -40,6 +41,7 @@ export class AppComponent implements OnInit{
         .pipe(map(result => (<any>result).dailyForecasts.forecastLocation))
         .subscribe(result => {
             this.weather = result.forecast;
+            this.location = result;
         }, error => {
             console.error(error);
         });

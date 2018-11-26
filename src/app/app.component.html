@@ -1,14 +1,20 @@
 <div class="main-div">
     <p *ngIf="weather.length == 0">Searching...</p>
     <div *ngIf="weather.length > 0">
-        <table style="width: 100%; text-align: center">
-            <thead></thead>
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="7">{{location.state}}, {{location.country}}</th>
+                </tr>
+            </thead>
             <tbody>
                 <tr>
                     <td *ngFor="let forecast of weather">
                         <img [src]="forecast.iconLink" />
-                        <p>{{ forecast.highTemperature }}C</p>
-                        <p>{{ forecast.utcTime }}</p>
+                        <p>{{ forecast.highTemperature }}ºC /
+                            {{ forecast.highTemperature | fahrenheit }}ºF
+                        </p>
+                        <p>{{ forecast.utcTime | moment }}</p>
                     </td>
                 </tr>
             </tbody>
